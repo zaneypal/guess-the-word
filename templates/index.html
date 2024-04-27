@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<h1>Guess the Word! Puzzle Game</h1>
+
+<div>
+    <ol>
+        <li>A workstation consists of a chair and a _____.</li>
+        <form id="question1">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+        </form>
+
+        <li>Employers do this when trying to find the right candidate for a job.</li>
+        <form id="question2">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+        </form>
+
+        <li>This comes, usually in the winter, when it’s really cold.</li>
+        <form id="question3">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+        </form>
+
+        <li>Used to unlock doors, locks, and safes.</li>
+        <form id="question4">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+            <input type="text" maxlength="1" class="answer-box">
+        </form>
+    </ol>
+</div>
+
+<button onclick="check()" hidden>
+    <span></span>
+    <p id="spantext">Check</p>    
+</button>
+<button id="check-btn2" onclick="check()">Check</button>
+<p id="answer-key" hidden>{{ answerKey }}</p>
+{% endblock %}
